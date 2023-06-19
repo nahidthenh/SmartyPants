@@ -5,8 +5,12 @@ $ColorWhite: #fff;
 $ColorBlack:#000;
 $ColorPrimary:#4d1eb7;
 $ColorPrimary2:#7538ff;
+$ColorPrimary2Hover:#6325f0;
 $ColorHero1:#4d1eb7;
 $ColorHero2:#47278F;
+$ColorSecendry:#ff45ad;
+$ColorSecendryHover:#de2b8f;
+
 // =============== Variable CSS End =============== //
 
 
@@ -58,3 +62,60 @@ body {
 }
 
 // =============== Header CSS End =============== //
+
+// =============== Home CSS Start =============== //
+.hero-area-wrap {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, $ColorHero1 0%, $ColorHero2 100%);
+  padding: 110px 0px 110px 0px;
+
+  .hero-area-content {
+    h1 {
+      font-size: 3.6em;
+      color: $ColorWhite;
+      font-weight: 700;
+      line-height: 1.2em;
+      text-transform: capitalize;
+    }
+
+    p {
+      color: $ColorWhite;
+      padding: 20px 7px;
+      font-size: 16px;
+      line-height: 1.7em;
+    }
+
+    .hero-btn-group {
+      a {
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1.2em;
+        color: $ColorWhite;
+        background-color: $ColorPrimary2;
+        border-style: solid;
+        border-width: 0px 0px 0px 0px;
+        border-radius: 4px 4px 4px 4px;
+        padding: 18px 40px 18px 40px;
+        margin-top: 10px !important;
+        display: inline-block;
+        transition: .3s;
+        margin-right: 30px;
+
+        &:hover {
+          background-color: $ColorPrimary2Hover;
+          transition: .3s;
+        }
+
+        &:last-child {
+          background-color: $ColorSecendry;
+
+          &:hover {
+            background-color: $ColorSecendryHover;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============== Home CSS End =============== //
