@@ -116,6 +116,21 @@ body {
       }
     }
   }
+
+  .hero-area-image {
+    img {
+      border-radius: 6px 300px 6px 300px;
+      transition: .3s;
+
+      // border-radius: 300px 6px 300px 6px;
+      &:hover {
+        border-radius: 300px 6px 300px 6px;
+        transition: .3s;
+        cursor: grab;
+      }
+    }
+  }
+
 }
 
 // =============== Home CSS End =============== //
