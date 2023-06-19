@@ -4,8 +4,8 @@ import QuizDetailsCard from "../QuizDetailsCard/QuizDetailsCard";
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData()
-    console.log(typeof quizDetails);
-    console.log(quizDetails);
+    // console.log(typeof quizDetails);
+    // console.log(quizDetails);
     return (
         <Container>
             <Row>
