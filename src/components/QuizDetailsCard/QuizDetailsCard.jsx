@@ -4,37 +4,42 @@ const QuizDetailsCard = ({ quiz }) => {
     console.log(quiz);
     return (
         <div>
-            <h3>name{quiz.question}</h3>
-
-
-
-
+            <h3>{quiz.question}</h3>
             {
                 quiz.options.map(option => <div>
                     <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="" />
-                        <label className="form-check-label" >
+                        {/* <input className="form-check-input" type="radio" name="flexRadioDefault" id="" /> */}
+                        {/* <label >
+                            {option}
+                        </label> */}
+                        <label className="form-check-label" key={option.id}>
+                            <input type="radio" name={`option`} className="form-check-input" value={option} />
                             {option}
                         </label>
                     </div>
                 </div>)
             }
-
-
-            {/* <div className="form-check">
-                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                    <label className="form-check-label" for="flexRadioDefault1">
-                        Default radio
-                    </label>
-            </div>
-            <div className="form-check">
-                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                    <label className="form-check-label" for="flexRadioDefault2">
-                        Default checked radio
-                    </label>
-            </div> */}
-
         </div>
+
+
+        // <div>
+        //     {quiz && (
+        //         <form>
+        //             {quiz.question.map((option, index) => (
+        //                 <div key={index}>
+        //                     <h3>{quiz.question}</h3>
+        //                     {option.options.map((option, optionIndex) => (
+        //                         <label key={optionIndex}>
+        //                             <input type="radio" name={`option-${index}`} value={option} />
+        //                             {option}
+        //                         </label>
+        //                     ))}
+        //                 </div>
+        //             ))}
+        //         </form>
+        //     )}
+        // </div>
+
     );
 };
 
