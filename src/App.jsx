@@ -1,13 +1,45 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
+import Main from './layout/main';
+import Error from './components/Error/Error';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Blog from './components/Blog/Blog';
+import Statistics from './components/Statistics/Statistics';
 function App() {
-
+  // Router Path Setup
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>,
+      children: [
+        {
+          path: '/',
+          element: <Home></Home>
+        },
+        {
+          path: '/about',
+          element: <About></About>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
+        },
+        {
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        },
+        {
+          path: '*',
+          element: <Error></Error>
+        }
+      ]
+    },
+  ]);
   return (
     <>
-      <Container>
-        <h2 className='bg-danger'>hello</h2>
-      </Container>
+      <RouterProvider router={router} />
     </>
   )
 }
