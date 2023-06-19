@@ -188,10 +188,6 @@ body {
 }
 
 @keyframes move-infinity {
-  // from {
-  //   transform: translateX(0);
-  // }
-
   to {
     transform: translateX(10px);
   }
@@ -202,3 +198,24 @@ body {
 }
 
 // =============== Home CSS End =============== //
+
+
+// =============== Quiz Details Page CSS Start =============== //
+
+.quiz-details-wrap {
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 40px;
+
+    b {
+      font-weight: 700;
+      background-color: #47278F;
+      color: $ColorWhite;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+  }
+}
+
+// =============== Quiz Details Page CSS End =============== //
