@@ -3,9 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import heroImage from "../../assets/images/hero.jpg"
 import Quiz from "../Quiz/Quiz";
 const Home = () => {
-
     const quizcatagory = useLoaderData()
-    console.log(quizcatagory);
     return (
         <>
             <div className="hero-area-wrap">
