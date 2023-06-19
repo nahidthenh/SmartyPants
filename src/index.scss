@@ -3,6 +3,7 @@
 // =============== Variable CSS Start =============== //
 $ColorWhite: #fff;
 $ColorBlack:#000;
+$ColorDark:#252525;
 $ColorPrimary:#4d1eb7;
 $ColorPrimary2:#7538ff;
 $ColorPrimary2Hover:#6325f0;
@@ -131,6 +132,22 @@ body {
     }
   }
 
+}
+
+.section-title {
+  padding: 50px;
+
+  h3 {
+    font-size: 2.2em;
+    font-weight: 700;
+    padding-bottom: 10px;
+    line-height: 1.3em;
+    color: $ColorDark;
+  }
+
+  p {
+    color: $ColorDark;
+  }
 }
 
 // =============== Home CSS End =============== //
