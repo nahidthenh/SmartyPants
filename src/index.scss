@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// =============== Variable CSS Start =============== //
+$ColorWhite: #fff;
+$ColorBlack:#000;
+$ColorPrimary:#4d1eb7;
+$ColorPrimary2:#7538ff;
+$ColorHero1:#4d1eb7;
+$ColorHero2:#47278F;
+// =============== Variable CSS End =============== //
+
+
+// =============== Basic CSS Start =============== //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins',
+    sans-serif !important;
+}
+
+// =============== Basic CSS End =============== //
+
+// =============== Header CSS Start =============== //
+.header-bg {
+  background-color: $ColorPrimary;
+}
+
+.navbar-brand {
+  color: $ColorWhite !important;
+  font-weight: 500;
+}
+
+.navbar-nav a {
+  color: $ColorWhite !important;
+  padding: 15px;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+// =============== Header CSS End =============== //
