@@ -10,8 +10,8 @@ const Quiz = ({ item }) => {
                 <h3>{item.name}</h3>
                 <p>{item.total}</p>
             </div>
-            <Link to=''>Lets Play <img width={28} src={arrowRight} alt="" /></Link>
-        </div>
+            <Link to={`/quizdetails/${item.id}`}>Lets Play <img width={28} src={arrowRight} alt="" /></Link>
+        </div >
     );
 };
 
