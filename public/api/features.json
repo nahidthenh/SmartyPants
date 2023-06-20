@@ -1,44 +1,42 @@
-{
-    "features": [
-        {
-            "id": "1",
-            "title": "Built with HTML5",
-            "img": "images/features/f-1.png"
-        },
-        {
-            "id": "2",
-            "title": "Bootstrap v4+",
-            "img": "images/features/f-2.png"
-        },
-        {
-            "id": "3",
-            "title": "Clean & Proffesional Code",
-            "img": "images/features/f-3.png"
-        },
-        {
-            "id": "4",
-            "title": "Cross Browser Compatible",
-            "img": "images/features/f-4.png"
-        },
-        {
-            "id": "5",
-            "title": "Free Google Fonts",
-            "img": "images/features/f-5.png"
-        },
-        {
-            "id": "6",
-            "title": "Well Documented",
-            "img": "images/features/f-6.png"
-        },
-        {
-            "id": "7",
-            "title": "Easy to customize",
-            "img": "images/features/f-7.png"
-        },
-        {
-            "id": "8",
-            "title": "Fully Responsive",
-            "img": "images/features/f-8.png"
-        }
-    ]
-}
+[
+    {
+        "id": "1",
+        "title": "Built with HTML5",
+        "img": "images/features/f-1.png"
+    },
+    {
+        "id": "2",
+        "title": "Bootstrap v4+",
+        "img": "images/features/f-2.png"
+    },
+    {
+        "id": "3",
+        "title": "Clean & Proffesional Code",
+        "img": "images/features/f-3.png"
+    },
+    {
+        "id": "4",
+        "title": "Cross Browser Compatible",
+        "img": "images/features/f-4.png"
+    },
+    {
+        "id": "5",
+        "title": "Free Google Fonts",
+        "img": "images/features/f-5.png"
+    },
+    {
+        "id": "6",
+        "title": "Well Documented",
+        "img": "images/features/f-6.png"
+    },
+    {
+        "id": "7",
+        "title": "Easy to customize",
+        "img": "images/features/f-7.png"
+    },
+    {
+        "id": "8",
+        "title": "Fully Responsive",
+        "img": "images/features/f-8.png"
+    }
+]

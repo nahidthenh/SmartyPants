@@ -11,6 +11,8 @@ $ColorHero1:#4d1eb7;
 $ColorHero2:#47278F;
 $ColorSecendry:#ff45ad;
 $ColorSecendryHover:#de2b8f;
+$ThemeBg1:#fff;
+$ThemeBg2:#ECEDFB;
 
 // =============== Variable CSS End =============== //
 
@@ -40,6 +42,18 @@ p {
 body {
   font-family: 'Poppins',
     sans-serif !important;
+}
+
+.padding-50 {
+  padding: 50px 0;
+}
+
+.padding-top-50 {
+  padding-top: 50px;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 50px;
 }
 
 // =============== Basic CSS End =============== //
@@ -135,8 +149,6 @@ body {
 }
 
 .section-title {
-  padding: 50px;
-
   h3 {
     font-size: 2.2em;
     font-weight: 700;
@@ -158,7 +170,7 @@ body {
   .quiz-logo {
     border-radius: 6px;
     margin-bottom: 20px;
-    background: #ECEDFB;
+    background: $ThemeBg2;
     width: 100%;
   }
 
@@ -195,6 +207,13 @@ body {
   50% {
     transform: translateX(-10px);
   }
+}
+
+
+// Core Features Page  
+
+.theme-bg-2 {
+  background-color: $ThemeBg2;
 }
 
 // =============== Home CSS End =============== //
@@ -284,8 +303,5 @@ body {
   display: none;
 }
 
-// .Toastify__close-button.Toastify__close-button--dark {
-//   display: none;
-// }
 
 // =============== Quiz Details Page CSS End =============== //

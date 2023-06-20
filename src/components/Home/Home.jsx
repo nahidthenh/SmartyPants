@@ -2,7 +2,19 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link, useLoaderData } from "react-router-dom";
 import heroImage from "../../assets/images/hero.jpg"
 import Quiz from "../Quiz/Quiz";
+import axios from 'axios';
+import { useState } from "react";
 const Home = () => {
+
+    const [features, setFeatures] = useState([])
+
+    axios.get('api/features.json')
+        .then(response => {
+            setFeatures(response.data);
+        })
+
+    // console.log(features);
+
     const quizcatagory = useLoaderData()
     return (
         <>
@@ -34,7 +46,7 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col md={6} className="mx-auto text-center">
-                            <div className="section-title">
+                            <div className="section-title padding-50">
                                 <h3>Quiz Categories</h3>
                                 <p>
                                     Smarty Pants is a sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -55,6 +67,27 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
+
+            <div className="theme-bg-2 padding-bottom-50">
+                <Container>
+                    <Row>
+                        <Col md={6} className="mx-auto text-center">
+                            <div className="section-title padding-50">
+                                <h3>Core Features</h3>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {
+                            features.map(feature => <div key={feature.id}>
+                                <img src={feature.img} alt="" />
+                                {feature.title}
+                            </div>)
+                        }
+                    </Row>
+                </Container>
+            </div>
+
         </>
     );
 };
