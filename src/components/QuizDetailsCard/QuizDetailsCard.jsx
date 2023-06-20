@@ -4,8 +4,8 @@ import QuizOption from "../QuizOption/QuizOption";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const QuizDetailsCard = ({ quiz }) => {
-    console.log(quiz.options);
+const QuizDetailsCard = ({ quiz, handleAnswer }) => {
+    console.log(handleAnswer);
 
     const showAnswer = () => {
         return (
@@ -30,20 +30,17 @@ const QuizDetailsCard = ({ quiz }) => {
                         <i className="ri-eye-line"></i>
                     </button>
                     <ToastContainer
-                        position="top-center"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        theme="success"
+
                     />
                 </div>
             </div>
             <div className="option-grid">
                 {
-                    quiz.options.map((option, index) => <QuizOption
+                    quiz.options.map((option, correctAnswer) => <QuizOption
                         key={option}
                         option={option}
-                        index={index}
+                        correctAnswer={correctAnswer}
+                        handleAnswer={handleAnswer}
                     ></QuizOption>)
                 }
             </div>

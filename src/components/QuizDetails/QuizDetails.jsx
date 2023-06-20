@@ -8,7 +8,8 @@ const QuizDetails = () => {
     // console.log(typeof quizDetails);
     // console.log(quizDetails);
     
-
+    const handleAnswer = () => {
+    }
 
     return (
 
@@ -28,6 +29,7 @@ const QuizDetails = () => {
                         <Col key={quiz.id} md={10} className="mx-auto my-3 quiz-single-item-wrap">
                             <QuizDetailsCard
                                 quiz={quiz}
+                                handleAnswer={handleAnswer}
                             />
                         </Col>
                     )

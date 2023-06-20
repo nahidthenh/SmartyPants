@@ -1,10 +1,36 @@
 /* eslint-disable react/prop-types */
-const QuizOption = ({ option }) => {
-    // console.log(option);
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const QuizOption = ({ option, correctAnswer, handleAnswer }) => {
+    // console.log(correctAnswer);
+
+    if (option === correctAnswer) {
+        var showToast = () =>
+            toast.success("Correct Answer", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                theme: "colored",
+            });
+    }
+    else {
+        showToast = () =>
+            toast.error("Wrong Answer", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                theme: "colored",
+            });
+    }
+
     return (
         <div>
-            <div className="option">
-                {option}
+            <div className="option" onClick={showToast}>
+                <p onClick={handleAnswer}>{option}</p>
             </div>
         </div>
     );
