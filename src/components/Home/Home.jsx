@@ -16,7 +16,7 @@ const Home = () => {
                                     Smarty Pants is dolor amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                                 </p>
                                 <div className="hero-btn-group">
-                                    <Link to=''>Play Now</Link>
+                                    <a href='#quiztime'>Play Nows</a>
                                     <Link to=''>Sign Up</Link>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@ const Home = () => {
                 </Container>
             </div>
 
-            <div className="quiz-data-wrap">
+            <div className="quiz-data-wrap" id="quiztime">
                 <Container>
                     <Row>
                         <Col md={6} className="mx-auto text-center">
