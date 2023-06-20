@@ -2,11 +2,16 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useLoaderData } from "react-router-dom";
 import QuizDetailsCard from "../QuizDetailsCard/QuizDetailsCard";
 
+
 const QuizDetails = () => {
     const quizDetails = useLoaderData()
     // console.log(typeof quizDetails);
     // console.log(quizDetails);
+    
+
+
     return (
+
         <Container>
             <Row>
                 <Col md={8} className="mx-auto">
@@ -16,6 +21,7 @@ const QuizDetails = () => {
                     </div>
                 </Col>
             </Row>
+           
             <Row>
                 {
                     quizDetails.data['questions'].map((quiz) =>
