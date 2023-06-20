@@ -1,10 +1,8 @@
 /* eslint-disable react/prop-types */
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const QuizOption = ({ option, correctAnswer, handleAnswer }) => {
-    // console.log(correctAnswer);
-
-    if (option === correctAnswer) {
+const QuizOption = ({ option, rightAns, handleAnswer }) => {
+    if (option === rightAns) {
         var showToast = () =>
             toast.success("Correct Answer", {
                 position: "top-center",
@@ -17,7 +15,7 @@ const QuizOption = ({ option, correctAnswer, handleAnswer }) => {
     }
     else {
         showToast = () =>
-            toast.error("Wrong Answer", {
+            toast.error("Wrong Answer !", {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,

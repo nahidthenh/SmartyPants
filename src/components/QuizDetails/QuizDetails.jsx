@@ -7,7 +7,7 @@ const QuizDetails = () => {
     const quizDetails = useLoaderData()
     // console.log(typeof quizDetails);
     // console.log(quizDetails);
-    
+
     const handleAnswer = () => {
     }
 
@@ -22,7 +22,7 @@ const QuizDetails = () => {
                     </div>
                 </Col>
             </Row>
-           
+
             <Row>
                 {
                     quizDetails.data['questions'].map((quiz) =>

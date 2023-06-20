@@ -5,8 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const QuizDetailsCard = ({ quiz, handleAnswer }) => {
-    console.log(handleAnswer);
-
+    const rightAns = `${quiz.correctAnswer}`
     const showAnswer = () => {
         return (
             toast.success(`${quiz.correctAnswer}`, {
@@ -36,16 +35,15 @@ const QuizDetailsCard = ({ quiz, handleAnswer }) => {
             </div>
             <div className="option-grid">
                 {
-                    quiz.options.map((option, correctAnswer) => <QuizOption
+                    quiz.options.map((option) => <QuizOption
                         key={option}
                         option={option}
-                        correctAnswer={correctAnswer}
+                        rightAns={rightAns}
                         handleAnswer={handleAnswer}
                     ></QuizOption>)
                 }
             </div>
         </div>
-
     );
 };
 
