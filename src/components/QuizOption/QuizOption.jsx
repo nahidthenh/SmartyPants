@@ -11,6 +11,7 @@ const QuizOption = ({ option, rightAns, handleAnswer }) => {
                 closeOnClick: false,
                 pauseOnHover: false,
                 theme: "colored",
+                draggable: false,
             });
     }
     else {
@@ -22,6 +23,7 @@ const QuizOption = ({ option, rightAns, handleAnswer }) => {
                 closeOnClick: false,
                 pauseOnHover: false,
                 theme: "colored",
+                draggable: false,
             });
     }
 

@@ -15,6 +15,7 @@ const QuizDetailsCard = ({ quiz, handleAnswer }) => {
                 closeOnClick: false,
                 pauseOnHover: false,
                 theme: "dark",
+                draggable: false,
             })
         )
 
