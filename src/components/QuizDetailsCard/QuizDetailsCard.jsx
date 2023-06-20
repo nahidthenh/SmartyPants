@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const QuizDetailsCard = ({ quiz }) => {
-    console.log(quiz.correctAnswer);
+    console.log(quiz.options);
 
     const showAnswer = () => {
         return (
@@ -13,10 +13,8 @@ const QuizDetailsCard = ({ quiz }) => {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
+                closeOnClick: false,
+                pauseOnHover: false,
                 theme: "dark",
             })
         )
@@ -28,7 +26,7 @@ const QuizDetailsCard = ({ quiz }) => {
             <div className="d-flex justify-content-between align-items-start">
                 <div><h3>{quiz.question}</h3></div>
                 <div className="show-ans-btn">
-                    <button onClick={() => showAnswer()}>
+                    <button onClick={() => showAnswer()} data-bs-toggle="popover" title="Click to show answers" data-bs-content="Popup content">
                         <i className="ri-eye-line"></i>
                     </button>
                     <ToastContainer
@@ -36,20 +34,16 @@ const QuizDetailsCard = ({ quiz }) => {
                         autoClose={5000}
                         hideProgressBar={false}
                         newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="dark"
+                        theme="success"
                     />
                 </div>
             </div>
             <div className="option-grid">
                 {
-                    quiz.options.map(option => <QuizOption
+                    quiz.options.map((option, index) => <QuizOption
                         key={option}
                         option={option}
+                        index={index}
                     ></QuizOption>)
                 }
             </div>
