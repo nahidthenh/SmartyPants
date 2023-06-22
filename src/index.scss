@@ -258,6 +258,7 @@ body {
   padding: 20px;
   height: 190px;
   box-shadow: 0px 15px 50px 0px rgba(26, 38, 74, 0.1);
+
   img {
     border-radius: 5px;
   }
@@ -403,3 +404,40 @@ body {
 
 
 // =============== Quiz Details Page CSS End =============== //
+
+
+
+// =============== Footer Page CSS Start =============== //
+.footer-wrap {
+  text-align: center;
+  padding: 30px 0;
+
+  h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  .footer-social-link {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+
+        a {
+          color: $ColorBlack;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+// =============== Footer Page CSS End =============== //
