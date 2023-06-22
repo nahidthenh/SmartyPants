@@ -15,7 +15,7 @@ const Blog = () => {
         })
 
     return (
-        <div>
+        <div className='padding-50'>
             <Container>
                 <Row>
                     {
