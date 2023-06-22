@@ -103,14 +103,15 @@ const Home = () => {
                 </Container>
             </div>
 
+           
 
-            <div className="theme-bg-2 padding-bottom-50">
+            <div className=" padding-bottom-50">
                 <Container>
                     <Row>
                         <Col md={6} className="mx-auto text-center">
                             <div className="section-title padding-50">
                                 <h3>
-                                    What our students have to say
+                                    What our users have to say
                                 </h3>
                                 <p>
                                     Smarty Pants is a sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -134,6 +135,20 @@ const Home = () => {
                                 </div>
                             </Col>)
                         }
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="cta-area-wrap padding-50">
+                <Container>
+                    <Row>
+                        <Col md={8} className="mx-auto">
+                            <h1>
+                                Questionnaire Multistep & Registration
+                                Form Wizard.
+                            </h1>
+                            <Link>Sign Up</Link>
+                        </Col>
                     </Row>
                 </Container>
             </div>

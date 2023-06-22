@@ -257,7 +257,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   height: 190px;
-
+  box-shadow: 0px 15px 50px 0px rgba(26, 38, 74, 0.1);
   img {
     border-radius: 5px;
   }
@@ -277,6 +277,42 @@ body {
     transition: .3s;
   }
 }
+
+// Call to Action 
+
+.cta-area-wrap {
+  background-image: url(../src/assets/images/cta-bg.png);
+  text-align: center;
+
+  h1 {
+    font-size: 42px;
+    line-height: 55px;
+    color: $ColorWhite;
+    margin: 30px 0;
+  }
+
+  a {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: $ColorWhite;
+    background-color: $ColorPrimary2;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 4px 4px 4px 4px;
+    padding: 18px 40px 18px 40px;
+    margin-top: 10px !important;
+    display: inline-block;
+    transition: 0.3s;
+    margin-right: 30px;
+
+    &:hover {
+      background-color: $ColorSecendry;
+      transition: 0.3s;
+    }
+  }
+}
+
 
 // =============== Home CSS End =============== //
 
