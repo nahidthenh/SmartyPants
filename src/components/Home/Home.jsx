@@ -103,9 +103,9 @@ const Home = () => {
                 </Container>
             </div>
 
-           
 
-            <div className=" padding-bottom-50">
+
+            <div className="padding-bottom-50">
                 <Container>
                     <Row>
                         <Col md={6} className="mx-auto text-center">
@@ -138,6 +138,32 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
+
+            <div className="theme-bg-2 padding-bottom-50" id="blog">
+                <Container>
+                    <Row>
+                        <Col md={6} className="mx-auto text-center">
+                            <div className="section-title padding-50">
+                                <h3>Our Blog</h3>
+                                <p>
+                                    Smarty Pants is a sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                </p>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {
+                            features.slice(0 - 3).map(feature => <Col md={4} key={feature.id}>
+                                <div className="feature-single-item">
+                                    <img src={feature.img} alt="" />
+                                    <h3>{feature.title}</h3>
+                                </div>
+                            </Col>)
+                        }
+                    </Row>
+                </Container>
+            </div>
+
 
             <div className="cta-area-wrap padding-50">
                 <Container>
