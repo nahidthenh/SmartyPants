@@ -25,8 +25,18 @@ const Home = () => {
         .catch(error => {
             console.error(error)
         })
+    
+    const [blog, setBlogs] = useState([])
 
-    // console.log(features);
+    axios.get('api/blog.json')
+        .then(response => {
+            setBlogs(response.data);
+        })
+        .catch(error => {
+            console.error(error)
+        })
+
+    
 
     const quizcatagory = useLoaderData()
     return (
@@ -153,32 +163,27 @@ const Home = () => {
                     </Row>
                     <Row>
                         {
-                            features.slice(0 - 3).map(feature => <Col md={4} key={feature.id}>
-                                <div className="feature-single-item">
-                                    <img src={feature.img} alt="" />
-                                    <h3>{feature.title}</h3>
-                                </div>
-                            </Col>)
+                            blog.slice(0 - 3).map(blog =>
+                                <Col md={4} key={blog.id}>
+                                    <div className="blog-single-card">
+                                        <img src={blog.img} alt="" />
+                                        <div className="d-flex justify-content-evenly mb-1">
+                                            <div>
+                                                <span><i className="ri-user-line"></i>{blog.author}</span>
+                                            </div>
+                                            <div>
+                                                <span><i className="ri-calendar-line"></i>{blog.date}</span>
+                                            </div>
+                                        </div>
+                                        <Link to={`${blog.id}`}><h3>{blog.title}</h3></Link>
+                                        <Link to={`${blog.id}`}>READ MORE</Link>
+                                    </div>
+                                </Col>
+                            )
                         }
                     </Row>
                 </Container>
             </div>
-
-
-            <div className="cta-area-wrap padding-50">
-                <Container>
-                    <Row>
-                        <Col md={8} className="mx-auto">
-                            <h1>
-                                Questionnaire Multistep & Registration
-                                Form Wizard.
-                            </h1>
-                            <Link>Sign Up</Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-
         </>
     );
 };
