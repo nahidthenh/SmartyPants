@@ -1,28 +1,26 @@
-{
-    "feedback": [
-        {
-            "id": "1",
-            "username": "Sazib Uddin",
-            "user_image": "/images/feedback/1.jpg",
-            "description": "Smartypants Quiz App has helped me improve my knowledge on various topics. The questions are challenging but not impossible, and the interface is easy to use."
-        },
-        {
-            "id": "2",
-            "username": "Sabbir Hossain",
-            "user_image": "/images/feedback/2.jpg",
-            "description": "I love using Smartypants Quiz App! The app offers a wide range of topics to choose from, and the questions are engaging and thought-provoking. The app also provides helpful explanations for each answer so I can learn as I go."
-        },
-        {
-            "id": "3",
-            "username": "Tarik manoar",
-            "user_image": "/images/feedback/3.jpg",
-            "description": "The Smartypants Quiz App is a great way to challenge yourself and learn new things at the same time. I really appreciate the variety of topics offered, and the app is designed in a way that makes learning fun."
-        },
-        {
-            "id": "4",
-            "username": "Mohasin Megh",
-            "user_image": "/images/feedback/4.jpg",
-            "description": "Smartypants Quiz App is highly addictive! I find myself spending hours answering questions and learning new facts. The app is well-designed and easy to navigate, and the questions are challenging without being frustrating."
-        }
-    ]
-}
+[
+    {
+        "id": "1",
+        "username": "Sazib Uddin",
+        "user_image": "/images/feedback/1.jpg",
+        "description": "Smartypants Quiz App has helped me improve my knowledge on various topics. The questions are challenging but not impossible, and the interface is easy to use."
+    },
+    {
+        "id": "2",
+        "username": "Sabbir Hossain",
+        "user_image": "/images/feedback/2.jpg",
+        "description": "I love using Smartypants Quiz App! The app offers a wide range of topics to choose from, and the questions are engaging and thought-provoking. The app also provides helpful explanations for each answer so I can learn as I go."
+    },
+    {
+        "id": "3",
+        "username": "Tarik manoar",
+        "user_image": "/images/feedback/3.jpg",
+        "description": "The Smartypants Quiz App is a great way to challenge yourself and learn new things at the same time. I really appreciate the variety of topics offered, and the app is designed in a way that makes learning fun."
+    },
+    {
+        "id": "4",
+        "username": "Mohasin Megh",
+        "user_image": "/images/feedback/4.jpg",
+        "description": "Smartypants Quiz App is highly addictive! I find myself spending hours answering questions and learning new facts. The app is well-designed and easy to navigate, and the questions are challenging without being frustrating."
+    }
+]

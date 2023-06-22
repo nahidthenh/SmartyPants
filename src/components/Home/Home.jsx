@@ -12,6 +12,9 @@ const Home = () => {
         .then(response => {
             setFeatures(response.data);
         })
+        .catch(error => {
+            console.error(error)
+        })
 
     // console.log(features);
 
@@ -79,10 +82,12 @@ const Home = () => {
                     </Row>
                     <Row>
                         {
-                            features.map(feature => <div key={feature.id}>
-                                <img src={feature.img} alt="" />
-                                {feature.title}
-                            </div>)
+                            features.map(feature => <Col md={3} key={feature.id}>
+                                <div className="feature-single-item">
+                                    <img src={feature.img} alt="" />
+                                    <h3>{feature.title}</h3>
+                                </div>
+                            </Col>)
                         }
                     </Row>
                 </Container>
