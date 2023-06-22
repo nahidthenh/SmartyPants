@@ -16,6 +16,16 @@ const Home = () => {
             console.error(error)
         })
 
+    const [feedbacks, setFeedbacks] = useState([])
+
+    axios.get('api/feedback.json')
+        .then(response => {
+            setFeedbacks(response.data);
+        })
+        .catch(error => {
+            console.error(error)
+        })
+
     // console.log(features);
 
     const quizcatagory = useLoaderData()
@@ -86,6 +96,41 @@ const Home = () => {
                                 <div className="feature-single-item">
                                     <img src={feature.img} alt="" />
                                     <h3>{feature.title}</h3>
+                                </div>
+                            </Col>)
+                        }
+                    </Row>
+                </Container>
+            </div>
+
+
+            <div className="theme-bg-2 padding-bottom-50">
+                <Container>
+                    <Row>
+                        <Col md={6} className="mx-auto text-center">
+                            <div className="section-title padding-50">
+                                <h3>
+                                    What our students have to say
+                                </h3>
+                                <p>
+                                    Smarty Pants is a sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                </p>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {
+                            feedbacks.map(feedback => <Col md={6} key={feedback.id}>
+                                <div className="feedback-single-item">
+                                    <div className="d-flex align-items-center">
+                                        <div>
+                                            <img src={feedback.img} alt="" />
+                                        </div>
+                                        <div className="ms-4">
+                                            <h3>{feedback.username}</h3>
+                                            <p>{feedback.description}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </Col>)
                         }
