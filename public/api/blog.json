@@ -3,6 +3,8 @@
         "id": 1,
         "title": "What is the Purpose of ReactJS?",
         "img": "/images/blog/1.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
         "shortDescription": "ReactJS library simplifies building complex UI components with efficient rendering and reusable pieces.",
         "description": "ReactJS is a popular JavaScript library that is used for building user interfaces. Its main purpose is to provide a declarative and efficient way to build complex UI components by breaking them down into smaller, reusable pieces called \"components\". ReactJS allows developers to manage the state and props of these components, which makes it easier to maintain and update the UI as the application grows. ReactJS also uses a virtual DOM, which improves the performance of the application by reducing the number of actual DOM manipulations required. Overall, the purpose of ReactJS is to provide developers with a powerful and flexible tool for building modern web applications with dynamic and interactive user interfaces."
     },
@@ -10,6 +12,8 @@
         "id": 2,
         "title": "How Does Context API Work?",
         "img": "/images/blog/2.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
         "shortDescription": "Context API in ReactJS simplifies data passing between components using a global object.",
         "description": "Context API is a built-in feature in ReactJS that allows data to be passed down through a component tree without having to manually pass props at each level. It can help simplify the code and reduce prop drilling. In Context API, data is stored in a global object called a \"context\", which can be accessed by any component within its scope. To use Context API, you need to create a context object using the createContext() method and wrap your components with a Provider component. The values provided by the Provider will be available to any component that consumes the context using the useContext() hook or the Consumer component. Context API is particularly useful for passing down theme data, user data, or any other data that needs to be accessed by multiple components in the application."
     },
@@ -17,6 +21,62 @@
         "id": 3,
         "title": "How React Hooks useRef Works?",
         "img": "/images/blog/3.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
+        "shortDescription": "useRef hook in ReactJS creates a reference to DOM elements or components for easy access.",
+        "description": "useRef is a built-in hook in ReactJS that allows you to create a reference to a DOM element or a component. This can be useful for accessing properties and methods of the element/component, or for storing data that needs to persist between renders. To use useRef, you first need to create a ref object using the useRef() method. This ref can then be passed to a component as a prop and accessed via its current property. The current property holds the current value of the ref, which can be a DOM node or any other value. useRef can also be used to store mutable values that should not trigger a re-render, such as the previous state of a component. By using the useRef hook, you can simplify your code and avoid unnecessary re-renders caused by changes to state or props."
+    },
+    {
+        "id": 4,
+        "title": "What is the Purpose of ReactJS?",
+        "img": "/images/blog/1.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
+        "shortDescription": "ReactJS library simplifies building complex UI components with efficient rendering and reusable pieces.",
+        "description": "ReactJS is a popular JavaScript library that is used for building user interfaces. Its main purpose is to provide a declarative and efficient way to build complex UI components by breaking them down into smaller, reusable pieces called \"components\". ReactJS allows developers to manage the state and props of these components, which makes it easier to maintain and update the UI as the application grows. ReactJS also uses a virtual DOM, which improves the performance of the application by reducing the number of actual DOM manipulations required. Overall, the purpose of ReactJS is to provide developers with a powerful and flexible tool for building modern web applications with dynamic and interactive user interfaces."
+    },
+    {
+        "id": 5,
+        "title": "How Does Context API Work?",
+        "img": "/images/blog/2.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
+        "shortDescription": "Context API in ReactJS simplifies data passing between components using a global object.",
+        "description": "Context API is a built-in feature in ReactJS that allows data to be passed down through a component tree without having to manually pass props at each level. It can help simplify the code and reduce prop drilling. In Context API, data is stored in a global object called a \"context\", which can be accessed by any component within its scope. To use Context API, you need to create a context object using the createContext() method and wrap your components with a Provider component. The values provided by the Provider will be available to any component that consumes the context using the useContext() hook or the Consumer component. Context API is particularly useful for passing down theme data, user data, or any other data that needs to be accessed by multiple components in the application."
+    },
+    {
+        "id": 6,
+        "title": "How React Hooks useRef Works?",
+        "img": "/images/blog/3.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
+        "shortDescription": "useRef hook in ReactJS creates a reference to DOM elements or components for easy access.",
+        "description": "useRef is a built-in hook in ReactJS that allows you to create a reference to a DOM element or a component. This can be useful for accessing properties and methods of the element/component, or for storing data that needs to persist between renders. To use useRef, you first need to create a ref object using the useRef() method. This ref can then be passed to a component as a prop and accessed via its current property. The current property holds the current value of the ref, which can be a DOM node or any other value. useRef can also be used to store mutable values that should not trigger a re-render, such as the previous state of a component. By using the useRef hook, you can simplify your code and avoid unnecessary re-renders caused by changes to state or props."
+    },
+    {
+        "id": 7,
+        "title": "What is the Purpose of ReactJS?",
+        "img": "/images/blog/1.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
+        "shortDescription": "ReactJS library simplifies building complex UI components with efficient rendering and reusable pieces.",
+        "description": "ReactJS is a popular JavaScript library that is used for building user interfaces. Its main purpose is to provide a declarative and efficient way to build complex UI components by breaking them down into smaller, reusable pieces called \"components\". ReactJS allows developers to manage the state and props of these components, which makes it easier to maintain and update the UI as the application grows. ReactJS also uses a virtual DOM, which improves the performance of the application by reducing the number of actual DOM manipulations required. Overall, the purpose of ReactJS is to provide developers with a powerful and flexible tool for building modern web applications with dynamic and interactive user interfaces."
+    },
+    {
+        "id": 8,
+        "title": "How Does Context API Work?",
+        "img": "/images/blog/2.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
+        "shortDescription": "Context API in ReactJS simplifies data passing between components using a global object.",
+        "description": "Context API is a built-in feature in ReactJS that allows data to be passed down through a component tree without having to manually pass props at each level. It can help simplify the code and reduce prop drilling. In Context API, data is stored in a global object called a \"context\", which can be accessed by any component within its scope. To use Context API, you need to create a context object using the createContext() method and wrap your components with a Provider component. The values provided by the Provider will be available to any component that consumes the context using the useContext() hook or the Consumer component. Context API is particularly useful for passing down theme data, user data, or any other data that needs to be accessed by multiple components in the application."
+    },
+    {
+        "id": 9,
+        "title": "How React Hooks useRef Works?",
+        "img": "/images/blog/3.png",
+        "date": "18 Feb 2022",
+        "author": "admin",
         "shortDescription": "useRef hook in ReactJS creates a reference to DOM elements or components for easy access.",
         "description": "useRef is a built-in hook in ReactJS that allows you to create a reference to a DOM element or a component. This can be useful for accessing properties and methods of the element/component, or for storing data that needs to persist between renders. To use useRef, you first need to create a ref object using the useRef() method. This ref can then be passed to a component as a prop and accessed via its current property. The current property holds the current value of the ref, which can be a DOM node or any other value. useRef can also be used to store mutable values that should not trigger a re-render, such as the previous state of a component. By using the useRef hook, you can simplify your code and avoid unnecessary re-renders caused by changes to state or props."
     }

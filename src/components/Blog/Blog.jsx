@@ -18,14 +18,15 @@ const Blog = () => {
         <div>
             <Container>
                 <Row>
-                    <Col>
-                        {
-                            blogs.map(blog => <BlogCard
-                                key={blog.id}
-                                blog={blog}
-                            ></BlogCard>)
-                        }
-                    </Col>
+                    {
+                        blogs.map(blog =>
+                            <Col md={4} key={blog.id}>
+                                <BlogCard
+                                    blog={blog}
+                                />
+                            </Col>
+                        )
+                    }
                 </Row>
             </Container>
         </div>
