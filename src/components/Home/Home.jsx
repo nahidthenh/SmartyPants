@@ -163,7 +163,7 @@ const Home = () => {
                     </Row>
                     <Row>
                         {
-                            blog.slice(0 - 3).map(blog =>
+                            blog.slice(0 , 3).map(blog =>
                                 <Col md={4} key={blog.id}>
                                     <div className="blog-single-card">
                                         <img src={blog.img} alt="" />
@@ -175,8 +175,8 @@ const Home = () => {
                                                 <span><i className="ri-calendar-line"></i>{blog.date}</span>
                                             </div>
                                         </div>
-                                        <Link to={`${blog.id}`}><h3>{blog.title}</h3></Link>
-                                        <Link to={`${blog.id}`}>READ MORE</Link>
+                                        <Link to={`/blogdetails/${blog.id}`}><h3>{blog.title}</h3></Link>
+                                        <Link to={`/blogdetails/${blog.id}`}>READ MORE</Link>
                                     </div>
                                 </Col>
                             )

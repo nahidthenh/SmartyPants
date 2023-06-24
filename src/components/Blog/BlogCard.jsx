@@ -15,8 +15,8 @@ const BlogCard = ({ blog }) => {
                     <span><i className="ri-calendar-line"></i>{date}</span>
                 </div>
             </div>
-            <Link to={`${id}`}><h3>{title}</h3></Link>
-            <Link to={`${id}`}>READ MORE</Link>
+            <Link to={`/blogdetails/${id}`}><h3>{title}</h3></Link>
+            <Link to={`/blogdetails/${id}`}>READ MORE</Link>
         </div>
     );
 };

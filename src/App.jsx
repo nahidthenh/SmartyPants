@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Statistics from './components/Statistics/Statistics';
 import QuizDetails from './components/QuizDetails/QuizDetails';
+import BlogDetails from './components/Blog/BlogDetails';
 function App() {
   // Router Path Setup
   const router = createBrowserRouter([
@@ -35,6 +36,16 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: 'blogdetails/:id',
+          // loader: ({ params }) => {
+          //   return fetch(`/api/blog/${params.id}`)
+          // },
+          loader: () => {
+            return fetch('/api/blog.json')
+          },
+          element: <BlogDetails></BlogDetails>
         },
         {
           path: '/statistics',
