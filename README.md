@@ -8,4 +8,4 @@ React Quiz App
 
 
 ### `App Screen Shot`
-![Screenshot](./appss.png)"
+![Screenshot](./apps.png)"
