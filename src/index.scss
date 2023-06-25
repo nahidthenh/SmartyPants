@@ -69,6 +69,23 @@ body {
 // =============== Basic CSS End =============== //
 
 // =============== Header CSS Start =============== //
+.join-now.nav-link {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.2em;
+  background-color: $ColorPrimary2;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 15px 45px;
+  width: 130px;
+  text-align: center;
+  margin-left: 10px;
+
+  &:hover {
+    background-color: $ColorPrimary2Hover;
+  }
+}
+
 .header-bg {
   background-color: $ColorPrimary;
 }

@@ -10,7 +10,7 @@ const Cta = () => {
                             Questionnaire Multistep & Registration
                             Form Wizard.
                         </h1>
-                        <Link>Sign Up</Link>
+                        <Link to='/signup'>Sign Up</Link>
                     </Col>
                 </Row>
             </Container>

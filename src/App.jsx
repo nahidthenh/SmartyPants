@@ -8,6 +8,8 @@ import Blog from './components/Blog/Blog';
 import Statistics from './components/Statistics/Statistics';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import BlogDetails from './components/Blog/BlogDetails';
+import Signin from './components/Auth/Signin/Signin';
+import Signup from './components/Auth/Signup/Signup';
 function App() {
   // Router Path Setup
   const router = createBrowserRouter([
@@ -39,9 +41,6 @@ function App() {
         },
         {
           path: 'blogdetails/:id',
-          // loader: ({ params }) => {
-          //   return fetch(`/api/blog/${params.id}`)
-          // },
           loader: () => {
             return fetch('/api/blog.json')
           },
@@ -52,11 +51,23 @@ function App() {
           element: <Statistics></Statistics>
         },
         {
+          path: '/signin',
+          element: <Signin></Signin>
+        },
+        {
+          path: '/signup',
+          element: <Signup></Signup>
+        },
+        {
           path: '*',
           element: <Error></Error>
         }
       ]
     },
+    {
+      path: '*',
+      element: <Error></Error>
+    }
   ]);
   return (
     <>
