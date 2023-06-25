@@ -13,7 +13,17 @@ $ColorSecendry:#ff45ad;
 $ColorSecendryHover:#de2b8f;
 $ThemeBg1:#fff;
 $ThemeBg2:#ECEDFB;
-
+$color_1: #2f2a55;
+$color_3: #7a7a7a;
+$color_4: #12283b;
+$color_5: #ff5562;
+$color_6: #525252;
+$color_7: #1e1e1e;
+$color_8: #f6520a;
+$color_9: #dc3545;
+$color_10: #ffffff;
+$color_11: #5a5960;
+$color_12: #111a24;
 // =============== Variable CSS End =============== //
 
 
@@ -411,6 +421,7 @@ body {
 .footer-wrap {
   text-align: center;
   padding: 30px 0;
+  background: #f5f5f5;
 
   h3 {
     font-size: 1.1em;
@@ -499,10 +510,1021 @@ body {
 
 .blog-single-card:hover {
   transition: .3s;
+
   img {
     transform: scale(1.01);
     transition: .3s;
   }
 }
 
+// Blog Details Card 
+
+.blog-details-card {
+  img {
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 35px
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
 // =============== Blog Page CSS End =============== //
+
+// =============== About Page CSS Start =============== //
+
+
+.upstudy-about-section {
+  .about-content {
+    padding-left: 100px;
+    padding-top: 30px;
+
+    .title {
+      font-size: 42px;
+      line-height: 52px;
+      font-weight: 600;
+      color: $color_1;
+      padding-right: 60px;
+
+      span {
+        color: $ColorPrimary;
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 30px;
+      color: $color_3;
+      margin-top: 25px;
+    }
+
+    .about-list {
+      display: flex;
+      padding-top: 15px;
+
+      .list-item {
+        margin-top: 15px;
+
+        &:last-child {
+          padding-left: 30px;
+        }
+
+        .title {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 600;
+          color: $color_1;
+          padding-right: 100px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          color: $color_3;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .about-img {
+    position: relative;
+    z-index: 1;
+
+    .shape-1 {
+      position: absolute;
+      left: 33%;
+      top: -3%;
+      z-index: -1;
+    }
+  }
+}
+
+.upstudy-about-section-02 {
+  .about-img {
+    position: relative;
+    z-index: 1;
+
+    .shape-1 {
+      position: absolute;
+      left: 85px;
+      top: 85px;
+      z-index: -1;
+    }
+
+    .image {
+      margin-top: -70px;
+    }
+  }
+
+  .about-content {
+    .text {
+      font-size: 18px;
+      line-height: 36px;
+      color: $color_3;
+      margin-top: 45px;
+    }
+
+    .about-list {
+      padding-top: 30px;
+
+      ul {
+        li {
+          display: flex;
+          align-items: flex-start;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+          color: $color_4;
+
+          .about-icon {
+            color: $color_5;
+            margin-right: 20px;
+          }
+
+          + {
+            li {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.upstudy-about-section-03 {
+  overflow: hidden;
+
+  .about-img-wrap {
+    position: relative;
+    z-index: 1;
+
+    .about-shape {
+      position: absolute;
+      right: 23%;
+      top: -5%;
+      z-index: -1;
+      -webkit-animation: zoom-inout 3s infinite;
+      animation: zoom-inout 3s infinite;
+    }
+
+    .about-img-big {
+      img {
+        border-radius: 50px;
+      }
+    }
+
+    .about-img-sm {
+      padding-left: 110px;
+      margin-top: 30px;
+
+      img {
+        border-radius: 50px;
+      }
+    }
+
+    .about-img-bottom {
+      position: absolute;
+      right: 5px;
+      bottom: 30px;
+
+      img {
+        border-radius: 50px;
+      }
+    }
+
+    .about-text-shape {
+      position: absolute;
+      right: 50px;
+      top: 50px;
+    }
+  }
+
+  .about-content {
+    padding-left: 110px;
+    padding-right: 35px;
+    padding-top: 25px;
+
+    .section-title-3 {
+      .sub-title {
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          background: #f6520a;
+          width: 110px;
+          height: 2px;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 30px;
+      color: $color_6;
+      margin-top: 30px;
+    }
+
+    .about-list {
+      padding-top: 25px;
+
+      ul {
+        li {
+          display: flex;
+          align-items: flex-start;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 600;
+          color: $color_7;
+
+          + {
+            li {
+              margin-top: 10px;
+            }
+          }
+
+          .about-icon {
+            font-size: 14px;
+            color: $color_8;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .btn {
+      padding: 0 50px;
+      border-radius: 35px;
+      background: #f6520a;
+      margin-top: 50px;
+
+      &:hover {
+        background: #ffa300;
+      }
+    }
+  }
+}
+
+.upstudy-about-section-04 {
+  padding-bottom: 110px;
+
+  .about-content {
+    padding-right: 110px;
+
+    .title {
+      font-size: 42px;
+      line-height: 52px;
+      font-weight: 800;
+      color: $color_1;
+      padding-right: 85px;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 30px;
+      color: $color_3;
+      margin-top: 30px;
+    }
+
+    .about-list {
+      padding-top: 40px;
+
+      ul {
+        li {
+          display: flex;
+          align-items: flex-start;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $color_1;
+
+          + {
+            li {
+              margin-top: 15px;
+            }
+          }
+
+          .about-icon {
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            background: #eff5ff;
+            color: $color_9;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-img-wrap {
+    display: flex;
+
+    .about-img-big {
+      position: relative;
+
+      img {
+        height: 100%;
+      }
+
+      .play-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -55%);
+
+        a {
+          width: 100px;
+          height: 100px;
+          background: #ffffff;
+          display: inline-block;
+          line-height: 100px;
+          text-align: center;
+          font-size: 16px;
+          color: $color_9;
+          position: relative;
+          border-radius: 50%;
+
+          &::before {
+            content: "";
+            border: 1px solid #ffffff;
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+          }
+
+          &:hover {
+            background: #dc3545;
+            color: $color_10;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upstudy-about-section-05 {
+  .about-img-item {
+    .about-img {
+      a {
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .about-content {
+      margin-top: 40px;
+      padding-right: 45px;
+
+      .title {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 600;
+        color: $color_1;
+
+        &:hover {
+          a {
+            color: $color_9;
+          }
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        color: $color_3;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .about-link-wrap {
+    border: 1px solid #1d3f6b;
+    border-radius: 10px;
+    padding: 40px 25px 40px 80px;
+
+    .title {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      color: $color_1;
+      margin-bottom: 25px;
+    }
+
+    .link-list {
+      ul {
+        li {
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 500;
+          color: $color_11;
+
+          i {
+            color: $color_9;
+            position: relative;
+            top: 1px;
+            margin-left: 8px;
+            transition: all 0.3s linear;
+          }
+
+          + {
+            li {
+              border-top: 1px solid #ebebeb;
+              margin-top: 14px;
+              padding-top: 14px;
+            }
+          }
+
+          &:hover {
+            a {
+              color: $color_9;
+            }
+
+            i {
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.upstudy-about-section-06 {
+  .about-img-wrap {
+    position: relative;
+
+    .shape-1 {
+      position: absolute;
+      right: 25px;
+      top: -35px;
+    }
+
+    .about-img-big {
+      overflow: hidden;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .about-img-sm {
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+      border: 8px solid #ffffff;
+      border-radius: 5px;
+    }
+  }
+
+  .about-content {
+    padding-left: 100px;
+    padding-top: 30px;
+
+    .about-title {
+      font-size: 42px;
+      line-height: 52px;
+      font-weight: 600;
+      color: $color_1;
+      padding-right: 60px;
+
+      span {
+        color: $ColorPrimary;
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 30px;
+      color: $color_3;
+      margin-top: 25px;
+    }
+
+    .about-list {
+      display: flex;
+      padding-top: 10px;
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 35px;
+
+      .list-item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .icon {
+          margin-right: 15px;
+
+          img {
+            width: 40px;
+            transition: all 0.3s linear;
+          }
+        }
+
+        .title {
+          flex: 1;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 600;
+          color: $color_1;
+          padding-right: 45px;
+        }
+
+        &:hover {
+          .icon {
+            img {
+              transform: rotateY(180deg);
+            }
+          }
+        }
+      }
+    }
+
+    .read-more {
+      font-size: 16px;
+      font-weight: 700;
+      color: $ColorPrimary;
+      margin-top: 35px;
+
+      i {
+        position: relative;
+        top: 1px;
+        left: 5px;
+      }
+
+      &:hover {
+        color: $color_12;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .upstudy-about-section {
+    .about-content {
+      padding-left: 40px;
+
+      .title {
+        padding-right: 0px;
+      }
+
+      .about-list {
+        .list-item {
+          .title {
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+
+    .about-img {
+      .shape-1 {
+        top: -12%;
+      }
+    }
+  }
+
+  .upstudy-about-section-02 {
+    padding-bottom: 100px;
+
+    .about-img {
+      .shape-1 {
+        left: 40px;
+        top: 40px;
+        width: 360px;
+      }
+
+      .image {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .upstudy-about-section-03 {
+    .about-img-wrap {
+      .about-shape {
+        right: 8%;
+      }
+
+      .about-img-sm {
+        padding-left: 0px;
+      }
+
+      .about-text-shape {
+        right: 0px;
+      }
+    }
+
+    .about-content {
+      padding-left: 50px;
+      padding-right: 0px;
+    }
+  }
+
+  .upstudy-about-section-04 {
+    .about-content {
+      padding-right: 60px;
+
+      .title {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .upstudy-about-section-05 {
+    .about-link-wrap {
+      padding: 40px 25px 40px 60px;
+    }
+  }
+
+  .upstudy-about-section-06 {
+    .about-img-wrap {
+      .shape-1 {
+        right: -10px;
+        top: -50px;
+        width: 270px;
+      }
+
+      .about-img-sm {
+        bottom: 0px;
+      }
+    }
+
+    .about-content {
+      padding-left: 45px;
+
+      .about-title {
+        padding-right: 0px;
+      }
+
+      .about-list {
+        .list-item {
+          .title {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .upstudy-about-section {
+    .about-content {
+      padding-left: 0px;
+      padding-top: 40px;
+
+      .about-list {
+        .list-item {
+          .title {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+
+    .about-img {
+      .shape-1 {
+        top: -0%;
+      }
+    }
+  }
+
+  .upstudy-about-section-02 {
+    padding-bottom: 80px;
+
+    .about-img {
+      margin-top: 50px;
+
+      .shape-1 {
+        width: inherit;
+      }
+    }
+  }
+
+  .upstudy-about-section-03 {
+    .about-img-wrap {
+      .about-shape {
+        right: 37%;
+        top: -4%;
+      }
+
+      .about-img-bottom {
+        right: 160px;
+      }
+
+      .about-text-shape {
+        right: 120px;
+      }
+    }
+
+    .about-content {
+      padding-left: 0px;
+      margin-top: 40px;
+    }
+  }
+
+  .upstudy-about-section-04 {
+    padding-bottom: 80px;
+
+    .about-img-wrap {
+      margin-top: 50px;
+    }
+  }
+
+  .upstudy-about-section-05 {
+    .about-link-wrap {
+      margin-top: 50px;
+    }
+  }
+
+  .upstudy-about-section-06 {
+    .about-img-wrap {
+      text-align: center;
+
+      .shape-1 {
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .about-content {
+      padding-left: 0px;
+      padding-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .upstudy-about-section {
+    .about-content {
+      padding-top: 40px;
+
+      .title {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+
+    .about-img {
+      .shape-1 {
+        height: 410px;
+      }
+    }
+  }
+
+  .upstudy-about-section-02 {
+    .about-img {
+      .shape-1 {
+        width: 410px;
+      }
+    }
+  }
+
+  .upstudy-about-section-03 {
+    .about-img-wrap {
+      .about-shape {
+        right: 17%;
+        top: -3%;
+      }
+
+      .about-img-bottom {
+        right: 0px;
+      }
+
+      .about-text-shape {
+        right: 0px;
+      }
+    }
+  }
+
+  .upstudy-about-section-04 {
+    padding-bottom: 60px;
+
+    .about-content {
+      padding-right: 0px;
+
+      .title {
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+  }
+
+  .upstudy-about-section-05 {
+    .about-wrap {
+      margin-top: -30px;
+    }
+
+    .about-img-item {
+      margin-top: 30px;
+    }
+  }
+
+  .upstudy-about-section-06 {
+    .about-content {
+      .about-title {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .upstudy-about-section {
+    .about-content {
+      .title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    .about-img {
+      .shape-1 {
+        height: 380px;
+      }
+    }
+  }
+
+  .upstudy-about-section-02 {
+    .about-img {
+      .shape-1 {
+        width: 350px;
+      }
+    }
+  }
+
+  .upstudy-about-section-04 {
+    .about-content {
+      .title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .upstudy-about-section-06 {
+    .about-content {
+      .about-title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .upstudy-about-section {
+    .about-content {
+      .about-list {
+        flex-direction: column;
+        gap: 10px;
+
+        .list-item {
+          &:last-child {
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+
+    .about-img {
+      .shape-1 {
+        top: -7%;
+        height: 300px;
+      }
+    }
+  }
+
+  .upstudy-about-section-02 {
+    .about-img {
+      .shape-1 {
+        width: 250px;
+        left: 30px;
+        top: 30px;
+      }
+    }
+  }
+
+  .upstudy-about-section-03 {
+    .about-img-wrap {
+      .about-img-sm {
+        display: none;
+      }
+
+      .about-img-bottom {
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        margin-top: 30px;
+      }
+
+      .about-text-shape {
+        top: 135px;
+      }
+    }
+  }
+
+  .upstudy-about-section-04 {
+    .about-img-wrap {
+      flex-direction: column;
+
+      .about-img-small {
+        text-align: center;
+      }
+    }
+  }
+
+  .upstudy-about-section-06 {
+    .about-img-wrap {
+      .shape-1 {
+        display: none;
+      }
+
+      .about-img-sm {
+        position: relative;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+// =============== About Page CSS End =============== //
+
+// =============== Error Page CSS Start =============== //
+
+.error-wrapper {
+  margin-top: 30px;
+}
+
+.error-item {
+  .error-thumb {
+    img {
+      max-height: 301px;
+    }
+  }
+
+  .error-content {
+    .title {
+      font-size: 36px;
+      line-height: 46px;
+      font-weight: 700;
+      color: $color_1;
+      margin-top: 43px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: $ColorDark;
+      margin-top: 11px;
+      margin-bottom: 41px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      background-color: $ColorPrimary;
+      border-color: transparent;
+      color: $ColorWhite;
+      border-radius: 4px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      height: 50px;
+      line-height: 48px;
+      padding: 0px 40px;
+      border-width: 0;
+      border-style: solid;
+      box-shadow: none;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+// =============== Error Page CSS End =============== //

@@ -4,6 +4,7 @@ import heroImage from "../../assets/images/hero.jpg"
 import Quiz from "../Quiz/Quiz";
 import axios from 'axios';
 import { useState } from "react";
+import Cta from "../Cta/Cta";
 const Home = () => {
 
     const [features, setFeatures] = useState([])
@@ -25,7 +26,7 @@ const Home = () => {
         .catch(error => {
             console.error(error)
         })
-    
+
     const [blog, setBlogs] = useState([])
 
     axios.get('api/blog.json')
@@ -36,7 +37,7 @@ const Home = () => {
             console.error(error)
         })
 
-    
+
 
     const quizcatagory = useLoaderData()
     return (
@@ -163,7 +164,7 @@ const Home = () => {
                     </Row>
                     <Row>
                         {
-                            blog.slice(0 , 3).map(blog =>
+                            blog.slice(0, 3).map(blog =>
                                 <Col md={4} key={blog.id}>
                                     <div className="blog-single-card">
                                         <img src={blog.img} alt="" />
@@ -184,6 +185,8 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
+
+            <Cta></Cta>
         </>
     );
 };
