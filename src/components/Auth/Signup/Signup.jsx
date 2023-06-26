@@ -3,8 +3,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../../firebase/firebase.init";
 import { useState } from "react";
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Form, Row } from 'react-bootstrap';
 import googleImage from '../../../assets/images/google.png'
+import { Link } from 'react-router-dom';
 
 const googleProvider = new GoogleAuthProvider();
 const auth = getAuth(app);
@@ -59,10 +60,26 @@ const Signup = () => {
                                 <h3>Sign up Now</h3>
                                 <p>Sign Up now to access the latest insights for your</p>
                                 <p>social media performance. </p>
-                                <button onClick={() => handleGoogleLogin()}> <img src={googleImage} alt="" /> Signin with google</button>
+                                <button onClick={() => handleGoogleLogin()}> <img src={googleImage} alt="" /> Sign Up with google</button>
                                 <span>Or</span>
-                                <ToastContainer />
                             </div>
+                            <Form>
+                                <Form.Group className="mb-3" controlId="formGroupEmail">
+                                    <Form.Label>Name</Form.Label>
+                                    <Form.Control type="text" placeholder="Enter name" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formGroupEmail">
+                                    <Form.Label>Email</Form.Label>
+                                    <Form.Control type="email" placeholder="Enter email" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formGroupPassword">
+                                    <Form.Label>Password</Form.Label>
+                                    <Form.Control type="password" placeholder="Password" />
+                                </Form.Group>
+                                <button className='btn-signup' type="submit">Sign Up</button>
+                            </Form>
+                            <p className="form-footer-text text-center">Have an account?  <Link to='/signin'>Sign In</Link></p>
+                            <ToastContainer />
                         </div>
                     </Col>
                 </Row>
