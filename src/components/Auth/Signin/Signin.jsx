@@ -1,6 +1,6 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import app from "../../../firebase/firebase.init";
 import { useState } from "react";
 import { Col, Container, Form, Row } from 'react-bootstrap';
@@ -50,6 +50,47 @@ const Signin = () => {
                 )
             });
     }
+
+    const handleSubmitBtn = (event) => {
+        event.preventDefault()
+        const form = event.target
+        const email = form.email.value;
+        const password = form.password.value;
+
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log(user);
+                setSuccess(
+                    toast.success("You are successfully logged in", {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "colored",
+                    })
+                )
+            })
+            .catch((error) => {
+                console.error('Error', error)
+                setSuccess(
+                    toast.error("Sorry something went wrong !", {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "colored",
+                    })
+                )
+            });
+    }
+
     return (
         <>
             <Container>
@@ -63,14 +104,14 @@ const Signin = () => {
                                 <button onClick={() => handleGoogleLogin()}> <img src={googleImage} alt="" /> Sign In with google</button>
                                 <span>Or</span>
                             </div>
-                            <Form>
+                            <Form onSubmit={handleSubmitBtn}>
                                 <Form.Group className="mb-3" controlId="formGroupEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
+                                    <Form.Control name="email" type="email" placeholder="Enter email" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formGroupPassword">
                                     <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" placeholder="Password" />
+                                    <Form.Control name="password" type="password" placeholder="Password" />
                                 </Form.Group>
                                 <button className='btn-signup' type="submit">Sign In</button>
                             </Form>
